@@ -1,32 +1,34 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
 
-//Bring in the async featchPost action
-import { featchPost, fetchPosts } from "../actions/postsActions";
+import { fetchPosts } from "../actions/postsActions";
 import { Post } from "../components/Posts";
 
 const PostsPage = ({ dispatch, loading, posts, hasErrors }) => {
   useEffect(() => {
     dispatch(fetchPosts());
   }, [dispatch]);
-};
 
-//Redux state is now in the props of this component due to connect import
-const PostsPage = ({ loading, posts, hasErrors }) => {
+  // Show loading, error, or success state
+  const renderPosts = () => {
+    if (loading) return <p>Loading posts...</p>;
+    if (hasErrors) return <p>Unable to display posts.</p>;
+
+    return posts.map(post => <Post key={post.id} post={post} excerpt />);
+  };
+
   return (
     <section>
       <h1>Posts</h1>
+      {renderPosts()}
     </section>
   );
 };
 
-// Map redux state to react component props
 const mapStateToProps = state => ({
   loading: state.posts.loading,
   posts: state.posts.posts,
   hasErrors: state.posts.hasErrors
 });
-
-//Connect REduct to react
 
 export default connect(mapStateToProps)(PostsPage);
