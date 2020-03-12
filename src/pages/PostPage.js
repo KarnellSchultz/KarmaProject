@@ -18,10 +18,18 @@ const PostsPage = ({ dispatch, loading, posts, hasErrors }) => {
   };
 
   return (
-    <section>
-      <h1>Posts</h1>
-      {renderPosts()}
-    </section>
+    <>
+      <nav>
+        <section>
+          <a href="/">Hola</a>
+          <a href="/">Hola</a>
+        </section>
+      </nav>
+      <section>
+        <h1>Posts</h1>
+        {renderPosts()}
+      </section>
+    </>
   );
 };
 
