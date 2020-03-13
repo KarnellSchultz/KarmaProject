@@ -20,22 +20,24 @@ const App = () => {
   }
 
   return (
-    <ThemeProvider theme={theme}>
-      <GlobalStyles />
-      <Router>
-        <Switch>
-          <Route exact path="/" component={DashboardPage}>
-            <DashboardPage themeToggle={themeToggle} />
-          </Route>
+    <>
+      <ThemeProvider theme={theme}>
+        <GlobalStyles />
+        <Router>
+          <Switch>
+            <Route exact path="/" component={DashboardPage}>
+              <DashboardPage themeToggle={themeToggle} />
+            </Route>
 
-          <Route exact path="/posts" component={PostsPage}>
-            <PostsPage themeToggle={themeToggle} />
-          </Route>
+            <Route exact path="/posts" component={PostsPage}>
+              <PostsPage themeToggle={themeToggle} />
+            </Route>
 
-          <Redirect to="/" />
-        </Switch>
-      </Router>
-    </ThemeProvider>
+            <Redirect to="/" />
+          </Switch>
+        </Router>
+      </ThemeProvider>
+    </>
   );
 };
 

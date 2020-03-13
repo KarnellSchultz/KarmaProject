@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import CMSPost from "../components/CMSPost";
 
 const DashboardPage = ({ themeToggle }) => (
   <>
@@ -18,6 +19,7 @@ const DashboardPage = ({ themeToggle }) => (
       <Link to="posts" className="button">
         View Posts
       </Link>
+      <CMSPost />
     </section>
   </>
 );

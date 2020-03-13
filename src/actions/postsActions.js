@@ -25,9 +25,7 @@ export function fetchPosts() {
   return async dispatch => {
     dispatch(getPosts());
     try {
-      const response = await fetch(
-        "https://jsonplaceholder.typicode.com/posts"
-      );
+      const response = await fetch("https://pokeapi.co/api/v2/pokemon/4/");
       const data = await response.json();
 
       dispatch(getPostsSuccess(data));

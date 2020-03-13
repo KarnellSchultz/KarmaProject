@@ -7,8 +7,31 @@ import { composeWithDevTools } from "redux-devtools-extension";
 
 import App from "./App";
 import rootReducer from "./reducers";
-
 import "./index.css";
+
+import { gql } from "apollo-boost";
+import { ApolloProvider } from "@apollo/react-hooks";
+import ApolloClient from "apollo-boost";
+const client = new ApolloClient({
+  uri: "https://api-euwest.graphcms.com/v1/ck5xurgaz2vik01fghe9ce6g6/master"
+  // uri: 'https://api.spacex.land/graphql/',
+
+  // uri: "https://48p1r2roz4.sse.codesandbox.io"
+});
+
+// or you can use `import gql from 'graphql-tag';` instead
+// client
+//   .query({
+//     query: gql`
+//       {
+//         posts {
+//           id
+//           title
+//         }
+//       }
+//     `
+//   })
+//   .then(result => console.log(result.data));
 
 const store = createStore(
   rootReducer,
@@ -17,7 +40,9 @@ const store = createStore(
 
 render(
   <Provider store={store}>
-    <App />
+    <ApolloProvider client={client}>
+      <App />
+    </ApolloProvider>
   </Provider>,
   document.getElementById("root")
 );
