@@ -9,7 +9,6 @@ import App from "./App";
 import rootReducer from "./reducers";
 import "./index.css";
 
-import { gql } from "apollo-boost";
 import { ApolloProvider } from "@apollo/react-hooks";
 import ApolloClient from "apollo-boost";
 const client = new ApolloClient({
@@ -18,20 +17,6 @@ const client = new ApolloClient({
 
   // uri: "https://48p1r2roz4.sse.codesandbox.io"
 });
-
-// or you can use `import gql from 'graphql-tag';` instead
-// client
-//   .query({
-//     query: gql`
-//       {
-//         posts {
-//           id
-//           title
-//         }
-//       }
-//     `
-//   })
-//   .then(result => console.log(result.data));
 
 const store = createStore(
   rootReducer,
