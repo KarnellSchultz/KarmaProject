@@ -4,10 +4,10 @@ import { createStore, applyMiddleware } from "redux";
 import { Provider } from "react-redux";
 import thunk from "redux-thunk";
 import { composeWithDevTools } from "redux-devtools-extension";
-
-import App from "./App";
 import rootReducer from "./reducers";
-import "./index.css";
+import App from "./App";
+
+// import "./index.css";
 
 import { ApolloProvider } from "@apollo/react-hooks";
 import ApolloClient from "apollo-boost";

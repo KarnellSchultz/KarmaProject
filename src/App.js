@@ -5,7 +5,7 @@ import {
   Switch,
   Redirect
 } from "react-router-dom";
-import DashboardPage from "./pages/DashboardPage";
+import { DashboardPage } from "./pages/DashboardPage";
 import PostsPage from "./pages/PostPage";
 
 import { ThemeProvider } from "styled-components";

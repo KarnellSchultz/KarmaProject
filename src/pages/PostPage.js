@@ -16,7 +16,13 @@ const PostsPage = ({ dispatch, loading, posts, hasErrors, themeToggle }) => {
     if (loading) return <p>Loading posts...</p>;
     if (hasErrors) return <p>Unable to display posts.</p>;
     console.log(typeof posts);
-    return <Post key={posts.id} post={posts.name} excerpt />;
+
+    if (posts) {
+      console.log(posts);
+      return posts.map(post => (
+        <Post key={post.id} title={post.title} body={post.body} excerpt />
+      ));
+    }
     // return posts.map(post => <Post key={post.id} post={post.id} excerpt />);
   };
 
