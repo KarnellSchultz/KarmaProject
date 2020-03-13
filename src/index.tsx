@@ -19,20 +19,6 @@ const client = new ApolloClient({
   // uri: "https://48p1r2roz4.sse.codesandbox.io"
 });
 
-// or you can use `import gql from 'graphql-tag';` instead
-// client
-//   .query({
-//     query: gql`
-//       {
-//         posts {
-//           id
-//           title
-//         }
-//       }
-//     `
-//   })
-//   .then(result => console.log(result.data));
-
 const store = createStore(
   rootReducer,
   composeWithDevTools(applyMiddleware(thunk))
