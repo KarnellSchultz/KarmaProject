@@ -1,7 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export const Post = ({ post, excerpt }) => (
+interface props {
+  post: any;
+  excerpt: any;
+}
+
+export const Post = ({ post, excerpt }: props) => (
   <article className={excerpt ? "post-excerpt" : "post"}>
     <h2>{post.title}</h2>
     <p> {post.body.substring(0, 100)} </p>

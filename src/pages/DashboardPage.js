@@ -1,12 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const DashboardPage = () => (
+const DashboardPage = ({ themeToggle }) => (
   <>
     <nav>
       <section>
         <a href="/">Hola</a>
         <a href="/">Hola</a>
+        <Link to="/" onClick={themeToggle}>
+          Dark/Light
+        </Link>
       </section>
     </nav>
     <section>
