@@ -9,7 +9,6 @@ import App from "./App";
 import rootReducer from "./reducers";
 import "./index.css";
 
-import { gql } from "apollo-boost";
 import { ApolloProvider } from "@apollo/react-hooks";
 import ApolloClient from "apollo-boost";
 const client = new ApolloClient({
