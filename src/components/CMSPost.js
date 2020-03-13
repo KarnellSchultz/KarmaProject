@@ -11,19 +11,6 @@ const CMS_POST = gql`
   }
 `;
 
-// client
-//   .query({
-//     query: gql`
-//       {
-//         posts {
-//           id
-//           title
-//         }
-//       }
-//     `
-//   })
-//   .then(result => console.log(result.data));
-
 export default function CMSPost() {
   const { loading, error, data } = useQuery(CMS_POST);
 
