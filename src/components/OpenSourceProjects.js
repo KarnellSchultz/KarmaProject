@@ -18,11 +18,12 @@ const OpenSourceSection = styled.section`
 `;
 
 const OpenSourceItem = styled.div`
-	@media screen and (max-width: 740px) {
+	@media screen and (max-width: 755px) {
 		width: 90%;
 	}
 	width: 45%;
-	height: 180px;
+	min-width: 330px;
+	height: 190px;
 	min-height: 150px;
 	background: linear-gradient(to right top, rgb(114, 19, 251), rgb(79, 22, 238))
 		rgb(255, 255, 255);
@@ -36,6 +37,12 @@ export default function OpenSourceProjects() {
 	return (
 		<>
 			<OpenSourceSection>
+				<OpenSourceItem>
+					<h1>Soda React From 🥃</h1>
+				</OpenSourceItem>
+				<OpenSourceItem>
+					<h1>Myra Tracking App</h1>
+				</OpenSourceItem>
 				<OpenSourceItem>
 					<h1>Soda React From 🥃</h1>
 				</OpenSourceItem>
