@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
 
@@ -6,9 +6,6 @@ export const GlobalStyles = createGlobalStyle`
 body {
     background: ${({ theme }) => theme.body};
     color: ${({ theme }) => theme.text};
-
-    /* background: #282c35; */
-    /* color: #f0f0f0; */
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -19,6 +16,19 @@ body {
 p {
     font-size: 1.1rem;
 }
+footer {
+    display: flex;
+	padding: .5rem 0;
+    margin: 5rem 0 0 0;
+}
+footer section {
+    width: 100%;
+    display:flex;
+    justify-content:center;
+    background:${({ theme }) => theme.body};
+    border-top: 1px solid rgba(0, 0, 0, 0.1)
+}
+
   
 nav {
     display: flex;

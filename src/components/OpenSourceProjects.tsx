@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import ProjectItem from './ProjectContainer';
 
 const OpenSourceSection = styled.section`
-	/* background: #fafafa; */
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -15,6 +14,14 @@ const OpenSourceSection = styled.section`
 				rgb(218, 163, 87)
 			)
 			rgb(255, 255, 255);
+	}
+	div:last-of-type {
+		background: linear-gradient(
+				230.34deg,
+				#4ca2cd 4.08%,
+				rgba(255, 255, 255, 0) 96.63%
+			),
+			#67b26f;
 	}
 `;
 

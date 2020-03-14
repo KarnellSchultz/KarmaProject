@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import SVGHeaderComponent from './SVGHeaderComponent';
-
 interface props {
 	themeToggle: any;
 }

@@ -1,15 +1,5 @@
 import ApolloClient from 'apollo-boost';
 import { gql } from 'apollo-boost';
-/// gql ^
-// const CMS_POST = gql`
-//   {
-//     posts {
-//       id
-//       title
-//     }
-//   }
-// `;
-// Create reduct action types
 
 export const GET_POSTS = 'GET POSTS';
 export const GET_POSTS_SUCCESS = 'GET_POSTS_SUCCESS';

@@ -10,10 +10,10 @@ import PostsPage from './pages/PostPage';
 
 import { ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme } from './theme';
-import { GlobalStyles } from './global';
+import { GlobalStyles } from './global.js';
 
 const App = () => {
-	const [theme, setTheme] = useState(lightTheme);
+	const [theme, setTheme] = useState(darkTheme);
 
 	function themeToggle() {
 		theme === lightTheme ? setTheme(darkTheme) : setTheme(lightTheme);
@@ -28,11 +28,9 @@ const App = () => {
 						<Route exact path="/" component={DashboardPage}>
 							<DashboardPage themeToggle={themeToggle} />
 						</Route>
-
 						<Route exact path="/posts" component={PostsPage}>
 							<PostsPage themeToggle={themeToggle} />
 						</Route>
-
 						<Redirect to="/" />
 					</Switch>
 				</Router>

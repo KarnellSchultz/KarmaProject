@@ -11,6 +11,18 @@ p {
 	font-size: 1.1rem;
 }
 
+footer {
+	display: flex;
+	padding: 2rem 0;
+	background: #fff;
+}
+footer section {
+	width: 100%;
+}
+footer h1 {
+	color: palevioletred;
+}
+
 nav {
 	display: flex;
 	padding: 2rem 0;

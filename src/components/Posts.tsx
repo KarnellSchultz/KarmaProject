@@ -11,7 +11,7 @@ interface props {
 export const Post = ({ id, title, body, excerpt }: props) => (
 	<article className={excerpt ? 'post-excerpt' : 'post'}>
 		<h2>{title}</h2>
-		<p> {body.substring(0, 130)} . . . </p>
+		<p> {body.substring(0, 450)} . . . </p>
 		{excerpt && (
 			<Link to={`/posts/${id}`} className="button">
 				View Post
