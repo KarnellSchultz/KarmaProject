@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
+import ProjectItem from '../components/ProjectContainer';
 
 const OpenSourceSection = styled.section`
-	background: cornflowerblue;
+	/* background: #fafafa; */
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -17,38 +18,32 @@ const OpenSourceSection = styled.section`
 	}
 `;
 
-const OpenSourceItem = styled.div`
-	@media screen and (max-width: ${({ theme }) => theme.maxMobileSize}) {
-		width: 90%;
-	}
-	width: 45%;
-	min-width: 330px;
-	height: 190px;
-	min-height: 150px;
-	background: linear-gradient(to right top, rgb(114, 19, 251), rgb(79, 22, 238))
-		rgb(255, 255, 255);
-	box-shadow: 0 0 0 0.1px rgba(0, 0, 0, 0.4);
-	border-radius: 5px;
-	margin-bottom: 1rem;
-	margin-top: 1rem;
-`;
-
 export default function OpenSourceProjects() {
 	return (
 		<>
 			<OpenSourceSection>
-				<OpenSourceItem>
-					<h1>Soda React From 🥃</h1>
-				</OpenSourceItem>
-				<OpenSourceItem>
-					<h1>Myra Tracking App</h1>
-				</OpenSourceItem>
-				<OpenSourceItem>
-					<h1>Soda React From 🥃</h1>
-				</OpenSourceItem>
-				<OpenSourceItem>
-					<h1>Myra Tracking App</h1>
-				</OpenSourceItem>
+				<ProjectItem
+					title={'Soda React From 🥃'}
+					link={'https://soda-react-form.netlify.com/'}
+					gitLink={'https://github.com/KarnellSchultz/ReactFormWork'}
+					blurb={`Super cool react form using Hooks! I love it so much and here is a
+                    lot of text.`}></ProjectItem>
+				<ProjectItem
+					title={'Myra Tracker 🐜'}
+					gitLink={'https://github.com/KarnellSchultz/MyraTrackingApp'}
+					link={'https://myratracker.firebaseapp.com/login.html'}
+					blurb={`Super cool react form using Hooks! I love it so much and here is a
+                    lot of text.`}></ProjectItem>
+				<ProjectItem
+					title={'KarnellSchultz.com 🔥'}
+					link={'KarnellSchultz.com'}
+					gitLink={'https://github.com/KarnellSchultz/karnell-site'}
+					blurb={`Track the progress of tasks through completion. This is a browser application made with Vue.js.`}></ProjectItem>
+				<ProjectItem
+					title={'This Site ?🌍?'}
+					gitLink={'#'}
+					blurb={`Super cool react form using Hooks! I love it so much and here is a
+                    lot of text.`}></ProjectItem>
 			</OpenSourceSection>
 		</>
 	);
