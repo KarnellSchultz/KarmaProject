@@ -18,7 +18,7 @@ const OpenSourceSection = styled.section`
 `;
 
 const OpenSourceItem = styled.div`
-	@media screen and (max-width: 755px) {
+	@media screen and (max-width: ${({ theme }) => theme.maxMobileSize}) {
 		width: 90%;
 	}
 	width: 45%;
