@@ -1,4 +1,4 @@
-# Karma Project
+# Karma 🙌🏽 Project
 
 ## Tech Stack
 
