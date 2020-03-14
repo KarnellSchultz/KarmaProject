@@ -1,8 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SVGHeaderComponent from './SVGHeaderComponent';
 
-import SVGHeaderComponent from '../components/SVGHeaderComponent';
-export default function Nav({ themeToggle }) {
+interface props {
+	themeToggle: any;
+}
+
+export default function Nav({ themeToggle }: props) {
 	return (
 		<>
 			<nav>

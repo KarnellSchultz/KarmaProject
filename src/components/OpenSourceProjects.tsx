@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import ProjectItem from '../components/ProjectContainer';
+import ProjectItem from './ProjectContainer';
 
 const OpenSourceSection = styled.section`
 	/* background: #fafafa; */
@@ -42,6 +42,7 @@ export default function OpenSourceProjects() {
 				<ProjectItem
 					title={'This Site ?🌍?'}
 					gitLink={'#'}
+					link={'#'}
 					blurb={`Super cool react form using Hooks! I love it so much and here is a
                     lot of text.`}></ProjectItem>
 			</OpenSourceSection>

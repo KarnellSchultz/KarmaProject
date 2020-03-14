@@ -4,7 +4,6 @@ import { connect } from 'react-redux';
 
 import { fetchPosts } from '../actions/postsActions';
 import { Post } from '../components/Posts';
-import { Link } from 'react-router-dom';
 
 import Nav from '../components/Nav';
 
@@ -13,7 +12,6 @@ const PostsPage = ({ dispatch, loading, posts, hasErrors, themeToggle }) => {
 		dispatch(fetchPosts());
 	}, [dispatch]);
 
-	// Show loading, error, or success state
 	const renderPosts = () => {
 		if (loading) return <p>Loading posts...</p>;
 		if (hasErrors) return <p>Unable to display posts.</p>;
@@ -25,7 +23,6 @@ const PostsPage = ({ dispatch, loading, posts, hasErrors, themeToggle }) => {
 				<Post key={post.id} title={post.title} body={post.body} excerpt />
 			));
 		}
-		// return posts.map(post => <Post key={post.id} post={post.id} excerpt />);
 	};
 
 	return (
