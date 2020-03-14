@@ -5,14 +5,15 @@ interface props {
 	title: string;
 	body: string;
 	excerpt: string;
+	id: string;
 }
 
-export const Post = ({ title, body, excerpt }: props) => (
+export const Post = ({ id, title, body, excerpt }: props) => (
 	<article className={excerpt ? 'post-excerpt' : 'post'}>
 		<h2>{title}</h2>
-		<p> {body.substring(0, 100)} . . . </p>
+		<p> {body.substring(0, 130)} . . . </p>
 		{excerpt && (
-			<Link to={`/posts/${title}`} className="button">
+			<Link to={`/posts/${id}`} className="button">
 				View Post
 			</Link>
 		)}

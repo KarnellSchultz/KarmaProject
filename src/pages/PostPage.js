@@ -1,10 +1,7 @@
 import React, { useEffect } from 'react';
-
 import { connect } from 'react-redux';
-
 import { fetchPosts } from '../actions/postsActions';
 import { Post } from '../components/Posts';
-
 import Nav from '../components/Nav';
 
 const PostsPage = ({ dispatch, loading, posts, hasErrors, themeToggle }) => {
@@ -15,12 +12,16 @@ const PostsPage = ({ dispatch, loading, posts, hasErrors, themeToggle }) => {
 	const renderPosts = () => {
 		if (loading) return <p>Loading posts...</p>;
 		if (hasErrors) return <p>Unable to display posts.</p>;
-		console.log(typeof posts);
 
 		if (posts) {
-			console.log(posts);
 			return posts.map(post => (
-				<Post key={post.id} title={post.title} body={post.body} excerpt />
+				<Post
+					key={post.id}
+					id={post.id}
+					title={post.title}
+					body={post.body}
+					excerpt
+				/>
 			));
 		}
 	};
