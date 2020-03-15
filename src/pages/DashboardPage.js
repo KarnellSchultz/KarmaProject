@@ -17,7 +17,7 @@ export const DashboardPage = ({ themeToggle }) => {
 			<Nav themeToggle={themeToggle} />
 			<StyledBodyContentSection>
 				<h1>
-					<Emoji symbol={'🤙🏽'} label={'hang ten emoji'} />
+					<Emoji symbol={' 👋🏽 '} label={'hang ten emoji'} />
 					Karnell Schultz
 				</h1>
 				<p>This is the Dashboard.</p>

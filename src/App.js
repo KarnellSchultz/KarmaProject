@@ -9,14 +9,20 @@ import { DashboardPage } from './pages/DashboardPage';
 import PostsPage from './pages/PostPage';
 
 import { ThemeProvider } from 'styled-components';
-import { lightTheme, darkTheme } from './theme';
+import { themes } from './theme';
 import { GlobalStyles } from './global.js';
 
 const App = () => {
-	const [theme, setTheme] = useState(darkTheme);
+	const [theme, setTheme] = useState(themes.lightTheme);
 
 	function themeToggle() {
-		theme === lightTheme ? setTheme(darkTheme) : setTheme(lightTheme);
+		if (theme === themes.lightTheme) {
+			return setTheme(themes.darkTheme);
+		} else if (theme === themes.darkTheme) {
+			return setTheme(themes.karmaTheme);
+		} else {
+			return setTheme(themes.lightTheme);
+		}
 	}
 
 	return (

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import SVGHeaderComponent from './SVGHeaderComponent';
 interface props {
 	themeToggle: any;
+	theme: any;
 }
 
 export default function Nav({ themeToggle }: props) {
@@ -12,7 +13,7 @@ export default function Nav({ themeToggle }: props) {
 				<section>
 					<a href="/">Hola</a>
 					<Link to="#" onClick={themeToggle}>
-						Dark/Light
+						Next Theme ➡️
 					</Link>
 				</section>
 			</nav>

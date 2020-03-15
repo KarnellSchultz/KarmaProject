@@ -10,7 +10,7 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    transition: background 250ms ease 0s;
+    transition: all 300ms ease 80ms;
 }
   
 p {
@@ -28,12 +28,11 @@ footer section {
     background:${({ theme }) => theme.body};
     border-top: 1px solid rgba(0, 0, 0, 0.1)
 }
-
   
 nav {
     display: flex;
     padding: 2rem 0;
-    background: #111;
+    background: ${({ theme }) => theme.navColor};
 }
   
 nav section {
@@ -51,11 +50,11 @@ nav a:first-of-type {
 }
   
 nav a:hover {
-    background: #222;
+    background: ${({ theme }) => theme.buttonHoverColor};
 }
   
 a {
-    color: #ea3546;
+    color: ${({ theme }) => theme.buttonBackgroundColor};
     text-decoration: none;
 }
   
@@ -88,16 +87,9 @@ section h1 {
     font-size: 1.5rem;
 }
   
-.comment {
-    background: #f0f0f0;
-    border-radius: 4px;
-    padding: 1rem 1.5rem;
-    margin: 1rem 0;
-}
-  
 .button {
     display: inline-block;
-    background: #ea3546;
+    background: ${({ theme }) => theme.buttonBackgroundColor};
     color: white;
     border-radius: 4px;
     font-weight: 700;

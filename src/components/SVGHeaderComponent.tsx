@@ -28,7 +28,7 @@ export const StyledSVGContainer = styled.div`
 	}
 
 	path {
-		fill: ${({ theme }) => theme.mainRed};
+		fill: ${({ theme }) => theme.mainAccent};
 		stroke: none;
 	}
 `;
