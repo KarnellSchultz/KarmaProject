@@ -10,3 +10,4 @@
 - GraphCMS
 - Styled-Components
 - TypeScript
+- Netlify 
