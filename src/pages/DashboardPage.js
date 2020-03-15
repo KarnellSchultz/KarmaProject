@@ -26,7 +26,6 @@ export const DashboardPage = ({ themeToggle }) => {
 				</Link>
 			</StyledBodyContentSection>
 			<section>
-				<h1>Open Source Projects</h1>
 				<OpenSourceProject />
 			</section>
 			<Footer />

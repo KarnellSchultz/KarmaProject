@@ -29,6 +29,7 @@ export default function OpenSourceProjects() {
 	return (
 		<>
 			<OpenSourceSection>
+				<h1>Open Source Projects</h1>
 				<ProjectItem
 					title={'Soda React From 🥃'}
 					link={'https://soda-react-form.netlify.com/'}

@@ -10,7 +10,6 @@ export const StyledSVGContainer = styled.div`
 		height: 300px;
 		margin-top: -6rem;
 	}
-
 	display: inline-block;
 	position: relative;
 	width: 100%;

@@ -94,6 +94,10 @@ section h1 {
     border-radius: 4px;
     font-weight: 700;
     padding: 0.75rem 1.5rem;
+    transition: all 300ms ease;
 }
-  
+  .button:hover {
+    box-shadow: 4px 4px 15px rgba(0,0,0,0.2)
+
+  }
   `;

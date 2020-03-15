@@ -5,7 +5,7 @@ const OpenSourceItem = styled.div`
 	@media screen and (max-width: ${({ theme }) => theme.maxMobileSize}) {
 		width: 90%;
 	}
-	width: 45%;
+	width: 49%;
 	min-width: 330px;
 	height: 190px;
 	min-height: 150px;
@@ -40,6 +40,7 @@ const StyledLink = styled.a`
 const StyledGitLink = styled(StyledLink)`
 	display: flex;
 	justify-content: flex-end;
+
 	margin-right: 1rem;
 	:hover {
 		text-decoration: underline;
@@ -60,12 +61,14 @@ export default function ProjectItem({
 	gitLink = '#',
 }: props) {
 	return (
-		<OpenSourceItem>
-			<StyledLink href={link}>
-				<h3>{title}</h3>
-				<p>{blurb}</p>
+		<>
+			<OpenSourceItem>
+				<StyledLink href={link}>
+					<h3>{title}</h3>
+					<p>{blurb}</p>
+				</StyledLink>
 				<StyledGitLink href={gitLink}>View on GitHub</StyledGitLink>
-			</StyledLink>
-		</OpenSourceItem>
+			</OpenSourceItem>
+		</>
 	);
 }

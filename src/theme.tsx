@@ -1,5 +1,5 @@
 // theme.js;
-const karmaBlue = '#63c6cb';
+// const karmaBlue = '#63c6cb';
 const darkKarmaPink = '#ff82a7';
 const lightKarmaPink = '#f8dbd5';
 const karmaCream = '#f5eee8';
@@ -10,6 +10,7 @@ export const themes = {
 	lightTheme: {
 		body: '#E2E2E2',
 		text: '#363537',
+		//Button
 		buttonBackgroundColor: red,
 		buttonHoverColor: '#222',
 		navColor: '#111',
@@ -22,11 +23,9 @@ export const themes = {
 	darkTheme: {
 		body: '#282c35',
 		text: '#f0f0f0',
-
 		//Button
 		buttonBackgroundColor: red,
 		buttonHoverColor: '#222',
-
 		navColor: '#111',
 		mainAccent: red,
 		toggleBorder: '#6B8096',
@@ -37,10 +36,9 @@ export const themes = {
 	karmaTheme: {
 		body: lightKarmaPink,
 		text: '#111',
-
+		//Button
 		buttonBackgroundColor: karmaGreen,
 		buttonHoverColor: lightKarmaPink,
-
 		navColor: karmaCream,
 		toggleBorder: '#FFF',
 		mainAccent: darkKarmaPink,

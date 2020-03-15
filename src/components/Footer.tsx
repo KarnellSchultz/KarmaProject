@@ -5,8 +5,10 @@ export default function Footer() {
 	return (
 		<footer>
 			<section>
-				<p>Thanks for checking my stuff out</p>
-				<Emoji symbol={'🤙🏽'} label={'hang ten emoji'} />
+				<p>
+					Thanks for checking my stuff out
+					<Emoji symbol={'🤙🏽'} label={'hang ten emoji'} />
+				</p>
 			</section>
 		</footer>
 	);
