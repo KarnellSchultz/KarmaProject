@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import ProjectItem from "./ProjectContainer";
+import { useSpring, animated } from "react-spring";
 
 const OpenSourceSection = styled.section`
   display: flex;
@@ -26,38 +27,46 @@ const OpenSourceSection = styled.section`
 `;
 
 export default function OpenSourceProjects() {
+  const fadeUpAnimation = useSpring({
+    opacity: 1,
+    transform: "translateY(0%)",
+    from: { opacity: 0, transform: "translateY(20%)" }
+  });
   return (
     <>
-      <OpenSourceSection>
-        <h1>Open Source Projects</h1>
-        <ProjectItem
-          title={"Soda React From 🥃"}
-          link={"https://soda-react-form.netlify.com/"}
-          gitLink={"https://github.com/KarnellSchultz/ReactFormWork"}
-          blurb={`Super cool react form using Hooks! I love it so much and here is a
-                    lot of text.`}
-        ></ProjectItem>
-        <ProjectItem
-          title={"Myra Tracker 🐜"}
-          gitLink={"https://github.com/KarnellSchultz/MyraTrackingApp"}
-          link={"https://myratracker.firebaseapp.com/login.html"}
-          blurb={`Super cool react form using Hooks! I love it so much and here is a
-                    lot of text.`}
-        ></ProjectItem>
-        <ProjectItem
-          title={"KarnellSchultz.com 🔥"}
-          link={"KarnellSchultz.com"}
-          gitLink={"https://github.com/KarnellSchultz/karnell-site"}
-          blurb={`Track the progress of tasks through completion. This is a browser application made with Vue.js.`}
-        ></ProjectItem>
-        <ProjectItem
-          title={"This Site ?🌍?"}
-          gitLink={"https://github.com/KarnellSchultz/KarmaProject"}
-          link={"#"}
-          blurb={`Super cool react form using Hooks! I love it so much and here is a
-                    lot of text.`}
-        ></ProjectItem>
-      </OpenSourceSection>
+      <animated.div style={fadeUpAnimation}>
+        <OpenSourceSection>
+          <h1>Open Source Projects</h1>
+          <ProjectItem
+            title={"Soda React From 🥃"}
+            link={"https://soda-react-form.netlify.com/"}
+            gitLink={"https://github.com/KarnellSchultz/ReactFormWork"}
+            blurb={`Super cool react form using Hooks! I love it so much and here is a
+          lot of text.`}
+          ></ProjectItem>
+
+          <ProjectItem
+            title={"Myra Tracker 🐜"}
+            gitLink={"https://github.com/KarnellSchultz/MyraTrackingApp"}
+            link={"https://myratracker.firebaseapp.com/login.html"}
+            blurb={`Super cool react form using Hooks! I love it so much and here is a
+          lot of text.`}
+          ></ProjectItem>
+          <ProjectItem
+            title={"KarnellSchultz.com 🔥"}
+            link={"KarnellSchultz.com"}
+            gitLink={"https://github.com/KarnellSchultz/karnell-site"}
+            blurb={`Track the progress of tasks through completion. This is a browser application made with Vue.js.`}
+          ></ProjectItem>
+          <ProjectItem
+            title={"This Site ?🌍?"}
+            gitLink={"https://github.com/KarnellSchultz/KarmaProject"}
+            link={"#"}
+            blurb={`Super cool react form using Hooks! I love it so much and here is a
+          lot of text.`}
+          ></ProjectItem>
+        </OpenSourceSection>
+      </animated.div>
     </>
   );
 }
