@@ -41,29 +41,26 @@ export default function OpenSourceProjects() {
             title={"Soda React From 🥃"}
             link={"https://soda-react-form.netlify.com/"}
             gitLink={"https://github.com/KarnellSchultz/ReactFormWork"}
-            blurb={`Super cool react form using Hooks! I love it so much and here is a
-          lot of text.`}
+            blurb={`A slick looking React form using hooks and React-Spring animations.`}
           ></ProjectItem>
 
           <ProjectItem
             title={"Myra Tracker 🐜"}
             gitLink={"https://github.com/KarnellSchultz/MyraTrackingApp"}
             link={"https://myratracker.firebaseapp.com/login.html"}
-            blurb={`Super cool react form using Hooks! I love it so much and here is a
-          lot of text.`}
+            blurb={`A 'Jira style' application created with Vue.js. This can be used to track the progress of projects.`}
           ></ProjectItem>
           <ProjectItem
             title={"KarnellSchultz.com 🔥"}
             link={"KarnellSchultz.com"}
             gitLink={"https://github.com/KarnellSchultz/karnell-site"}
-            blurb={`Track the progress of tasks through completion. This is a browser application made with Vue.js.`}
+            blurb={`My Personal website & blog KarnellSchultz.com`}
           ></ProjectItem>
           <ProjectItem
             title={"This Site ?🌍?"}
             gitLink={"https://github.com/KarnellSchultz/KarmaProject"}
             link={"#"}
-            blurb={`Super cool react form using Hooks! I love it so much and here is a
-          lot of text.`}
+            blurb={`This site (whoa that's meta 💥) made with all sorts of cool tech`}
           ></ProjectItem>
         </OpenSourceSection>
       </animated.div>

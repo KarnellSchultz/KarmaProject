@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import SVGHeaderComponent from "./SVGHeaderComponent";
 import Emoji from "./Emoji";
-import styled from "styled-components";
 interface props {
   themeToggle: any;
   theme: any;
