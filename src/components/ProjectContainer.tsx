@@ -9,9 +9,7 @@ const OpenSourceItem = styled.div`
   min-width: 330px;
   height: 190px;
   min-height: 150px;
-  background: rgb(255, 255, 255)
-    linear-gradient(to right bottom, rgb(109, 110, 114), rgb(158, 160, 166))
-    repeat scroll 0% 0%;
+  background: ${({ theme }) => theme.gradient};
   box-shadow: 0 0 0 0.1px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
   margin: 0.5rem 0.2rem 0.2rem 0.2rem;
