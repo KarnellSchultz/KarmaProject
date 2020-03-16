@@ -15,4 +15,9 @@
 - TypeScript
 - Netlify
 
-### Thanks for stopping by :-) 
+### How to run this project locally
+
+- from the cmd line run `git clone https://github.com/KarnellSchultz/KarmaProject.git`
+- `cd` into the project 👉🏽 `cd KarmaProject`
+- install yarn via the `yarn` cmd 🧶
+- `yarn start` Will start the project on `http://localhost:3000/`
