@@ -13,7 +13,10 @@ export default function Nav({ themeToggle }: props) {
       <nav>
         <section>
           <a href="/">Home</a>
-          <a href="/posts">View Posts</a>
+          <Link to="/posts">
+            View Posts
+            <Emoji symbol={" 🚀"} label={"hang ten emoji"} />
+          </Link>
           <Link to="#" onClick={themeToggle}>
             Change Theme
             <Emoji symbol={" 👉🏽"} label={"hang ten emoji"} />
