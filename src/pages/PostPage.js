@@ -4,9 +4,8 @@ import { fetchPosts } from "../actions/postsActions";
 import { Post } from "../components/Posts";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
-import styled from "styled-components";
-
 import { useSpring, animated } from "react-spring";
+import styled from "styled-components";
 
 const Spinner = styled.div`
   display: flex;

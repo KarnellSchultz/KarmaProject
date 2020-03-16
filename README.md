@@ -11,5 +11,6 @@
 - GraphQL
 - GraphCMS
 - Styled-Components
+- React-Spring
 - TypeScript
 - Netlify
