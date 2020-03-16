@@ -41,6 +41,7 @@ const StyledGitLink = styled(StyledLink)`
   justify-content: flex-end;
 
   margin-right: 1rem;
+
   :hover {
     text-decoration: underline;
   }
