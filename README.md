@@ -2,6 +2,8 @@
 
 # Karma 🙌🏽 Project
 
+![](https://share.getcloudapp.com/mXuqxKEy)
+
 ## Tech Stack
 
 - React
@@ -10,4 +12,4 @@
 - GraphCMS
 - Styled-Components
 - TypeScript
-- Netlify 
+- Netlify
