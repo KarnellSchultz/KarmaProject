@@ -52,7 +52,7 @@ export default function OpenSourceProjects() {
           ></ProjectItem>
           <ProjectItem
             title={"KarnellSchultz.com 🔥"}
-            link={"KarnellSchultz.com"}
+            link={"https://karnellschultz.com/"}
             gitLink={"https://github.com/KarnellSchultz/karnell-site"}
             blurb={`My Personal website & blog KarnellSchultz.com`}
           ></ProjectItem>

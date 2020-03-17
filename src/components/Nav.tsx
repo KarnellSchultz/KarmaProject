@@ -18,8 +18,8 @@ export default function Nav({ themeToggle }: props) {
             <Emoji symbol={" 🚀"} label={"hang ten emoji"} />
           </Link>
           <Link to="#" onClick={themeToggle}>
-            Next Theme
-            <Emoji symbol={" 👉🏽"} label={"hang ten emoji"} />
+            Themes
+            <Emoji symbol={" 💅🏼"} label={"hang ten emoji"} />
           </Link>
         </section>
       </nav>
